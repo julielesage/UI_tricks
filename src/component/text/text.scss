@@ -1,0 +1,74 @@
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.typing-body {
+	margin: 0;
+	display: grid;
+}
+  
+  .typewriter {
+	position: relative;
+	font-family: "Source Code Pro", monospace;
+	width: max-content;
+  }
+  
+  .typewriter::before,
+  .typewriter::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+  }
+  
+  .typewriter::before {
+	background: white;
+	animation: typing 6s
+	  steps(30) 1s infinite; //forward au lieu de infinite pour arreter
+  }
+  
+  .typewriter::after {
+	width: 0.125em;
+	background: red;
+	animation: typing 6s
+		steps(24) 1s infinite,
+	  blink 750ms steps(30) infinite;
+  }
+  
+
+  
+  @keyframes typing {
+	to {
+	  left: 100%;
+	}
+  }
+  
+  @keyframes blink {
+	to {
+	  background: transparent;
+	}
+  }
+  
+  @keyframes fadeInUp {
+	to {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  #yt-link {
+	position: absolute;
+	bottom: 2em;
+	width: 100%;
+	color: hsl(0 0 0 / 0.7);
+  
+	&:hover,
+	&:focus {
+	  color: teal;
+	}
+  }
+  
