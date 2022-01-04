@@ -51,24 +51,4 @@
 	to {
 	  background: transparent;
 	}
-  }
-  
-  @keyframes fadeInUp {
-	to {
-	  opacity: 1;
-	  transform: translateY(0);
-	}
-  }
-  
-  #yt-link {
-	position: absolute;
-	bottom: 2em;
-	width: 100%;
-	color: hsl(0 0 0 / 0.7);
-  
-	&:hover,
-	&:focus {
-	  color: teal;
-	}
-  }
-  
+}
