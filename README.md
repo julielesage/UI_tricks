@@ -7,7 +7,7 @@ You can see the result for each component here : https://determined-mestorf-3733
 
 <img
 		alt="UI Tricks and animations "
-		src="screenShots/1.png" width="100%">
+		src="screenShots/2.png" width="100%">
 
 ## Installation
 
