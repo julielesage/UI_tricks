@@ -6,6 +6,7 @@ import Rotation from './component/rotation/Rotation';
 import Triangle3DSpin from './component/triangle3Dspin/Triangle3DSprin';
 import Cursors from "./component/cursors/Cursors";
 import LonelyClaw from "./component/lonelyClaw/LonelyClaw";
+import ScannedBalls from './component/scannedBalls/scannedBalls'
 import Text from "./component/text/Text";
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
 			<Header />
 			<div className="flex-wrap p-t_60 space-evenly">
 
-
+				<Animation title="SCANNED BALLS" content={<ScannedBalls />} double={true} />
 				<Animation title="NEUMORPHIC LIGHT SWITCH" content={<NeumorphicLightSwitch />} />
 				<Animation title="TRIANGLE 3D SPIN" content={<Triangle3DSpin />} />
 				<Animation title="LONELY CLAW" content={<LonelyClaw />} double={true} />
